@@ -77,13 +77,13 @@
       <div class="c-pagination__ctrl">
         <div class="c-pagination__newer">
           {{ if .Prev }}
-          <a href="{{ .Prev.Permalink }}">Newer</a>
+          <a href="{{ .Prev.Permalink }}">{{ .Prev.Title }}</a>
           {{ else }}
           {{ end }}
         </div>
         <div class="c-pagination__older">
           {{ if .Next }}
-          <a href="{{ .Next.Permalink }}">Older</a>
+          <a href="{{ .Next.Permalink }}">{{ .Next.Title }}</a>
           {{ else }}
           {{ end }}
         </div>
