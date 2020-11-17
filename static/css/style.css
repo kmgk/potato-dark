@@ -41,7 +41,7 @@ html {
 }
 
 body {
-    color: #747369d4;
+    color: #1a1918d4;
     background: #111114;
     line-height: 1.57;
     font-size: 1.0rem;
@@ -186,7 +186,8 @@ img {
 }
 
 .l-footer {
-    padding: 24px 0
+    padding: 24px 0;
+    color:black;
 }
 
 .c-title {
