@@ -2,9 +2,9 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1" />
   {{ with .Title | default .Site.Title }}
-  <title>{{ . }}</title>
-  <meta property="og:title" content="{{ . }}" />
-  <meta name="twitter:title" content="{{ . }}" />
+  <title>{{ . }} - kmgk.dev</title>
+  <meta property="og:title" content="{{ . }} - kmgk.dev" />
+  <meta name="twitter:title" content="{{ . }} - kmgk.dev" />
   {{ end }}
 
   {{ with .Description | default .Site.Params.subtitle }}
@@ -14,7 +14,7 @@
   {{ end }}
 
   <meta name="author" content="{{ .Site.Params.author }}"/>
-  <meta property="og:site_name" content="{{ .Site.Title }}" />
+  <meta property="og:site_name" content="{{ .Site.Title }} - kmgk.dev" />
   <meta property="og:url" content="{{ .Permalink }}" />
 
   {{ with .Params.thumbnail }}
@@ -45,7 +45,7 @@
   {{- end -}}
   {{ if eq .RelPermalink "/" }}
   {{ with .Site.Home.AlternativeOutputFormats.Get "RSS" }}
-  <link href="{{ .Permalink }}" rel="alternate" type="application/rss+xml" title="{{ $.Site.Title }}" />
+  <link href="{{ .Permalink }}" rel="alternate" type="application/rss+xml" title="{{ $.Site.Title }} - kmgk.dev" />
   {{ end }}
   {{ end }}
   <script type="text/javascript" src="{{ .Site.BaseURL }}/js/bundle.js"></script>
